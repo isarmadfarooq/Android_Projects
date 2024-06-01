@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="color_Healthy">#009688</color>
+    <color name="color_overWt">#F44336</color>
+    <color name="color_underWt">#FFEB3B</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">BMI_APP</string>
+    <string name="calculate_bmi_btn_txt">Calculate BMI</string>
+    <string name="clear_btn_txt">Clear</string>
+    <string name="hint_height_Ft">Enter your height(in Ft)</string>
+    <string name="hint_height_In">Enter your height(in Inch)</string>
+    <string name="hint_weight">Enter your weight</string>
+    <string name="txt_result">Result</string>
+    <style name="Base.Theme.BMI_APP" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.BMI_APP" parent="Base.Theme.BMI_APP"/>
+</resources>

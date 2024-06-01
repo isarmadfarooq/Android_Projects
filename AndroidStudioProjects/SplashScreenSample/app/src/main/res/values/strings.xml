@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SplashScreenSample</string>
+    <string name="splash_image">Splash</string>
+    <string name="splash_title">SarmadTechEmpire</string>
+</resources>

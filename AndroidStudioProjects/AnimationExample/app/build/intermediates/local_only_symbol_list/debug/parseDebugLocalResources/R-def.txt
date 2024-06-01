@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+anim alpha
+anim move
+anim rotate
+anim scale
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnAlpha
+id btnRotate
+id btnScale
+id btnTranslate
+id main
+id textAnim
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string alpha
+string app_name
+string rotate
+string sarmadtechempire
+string scale
+string translate
+style Base.Theme.AnimationExample
+style Theme.AnimationExample
+xml backup_rules
+xml data_extraction_rules
