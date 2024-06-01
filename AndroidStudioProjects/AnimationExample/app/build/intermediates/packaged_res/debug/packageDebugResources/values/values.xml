@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="alpha">Alpha</string>
+    <string name="app_name">AnimationExample</string>
+    <string name="rotate">Rotate</string>
+    <string name="sarmadtechempire">SarmadTechEmpire</string>
+    <string name="scale">Scale</string>
+    <string name="translate">Translate</string>
+    <style name="Base.Theme.AnimationExample" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.AnimationExample" parent="Base.Theme.AnimationExample"/>
+</resources>

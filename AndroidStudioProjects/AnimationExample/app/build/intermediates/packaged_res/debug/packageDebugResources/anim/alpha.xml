@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha
+        android:fromAlpha="0"
+        android:toAlpha="1"
+        android:duration="4000"
+        android:repeatCount="infinite"/>
+
+</set>
+
+<!-- EXPLAINATION HOW IT WORK >-->
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--    &lt;!&ndash; This is an XML file defining an animation set for Android. &ndash;&gt;-->
+<!--<set xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--&lt;!&ndash; This element defines an alpha animation, which controls the transparency of a view. &ndash;&gt;-->
+<!--<alpha-->
+<!--    android:fromAlpha="0"           &lt;!&ndash; The starting alpha value for the animation (0 = fully transparent). &ndash;&gt;-->
+<!--android:toAlpha="1"             &lt;!&ndash; The ending alpha value for the animation (1 = fully opaque). &ndash;&gt;-->
+<!--android:duration="4000"         &lt;!&ndash; The duration of the animation in milliseconds (4000ms = 4 seconds). &ndash;&gt;-->
+<!--android:repeatCount="infinite"  &lt;!&ndash; The number of times the animation should repeat (infinite = repeat forever). &ndash;&gt;-->
+<!--/>-->
+
+<!--</set>-->
