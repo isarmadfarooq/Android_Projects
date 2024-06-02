@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">ListExample</string>
+    <string name="search_here">Search here..</string>
+    <string name="select_an_id_proof">Select an ID proof</string>
+    <style name="Base.Theme.ListExample" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.ListExample" parent="Base.Theme.ListExample"/>
+</resources>
