@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="3600"
+        android:duration="12000"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        />
+
+</set>
+
+
+<!--Explaination how its work-->
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--    &lt;!&ndash; This is an XML file defining an animation set for Android. &ndash;&gt;-->
+<!--<set xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--&lt;!&ndash; This element defines a rotate animation, which rotates a view. &ndash;&gt;-->
+<!--<rotate-->
+<!--    android:fromDegrees="0"         &lt;!&ndash; The starting angle for the rotation (0 degrees). &ndash;&gt;-->
+<!--android:toDegrees="3600"        &lt;!&ndash; The ending angle for the rotation (3600 degrees, or 10 full rotations). &ndash;&gt;-->
+<!--android:duration="12000"        &lt;!&ndash; The duration of the animation in milliseconds (12000 ms = 12 seconds). &ndash;&gt;-->
+<!--android:pivotX="50%"            &lt;!&ndash; The X coordinate of the point around which the view will rotate, as a percentage of the view's width (50% = center of the view). &ndash;&gt;-->
+<!--android:pivotY="50%"            &lt;!&ndash; The Y coordinate of the point around which the view will rotate, as a percentage of the view's height (50% = center of the view). &ndash;&gt;-->
+<!--/>-->
+
+<!--</set>-->

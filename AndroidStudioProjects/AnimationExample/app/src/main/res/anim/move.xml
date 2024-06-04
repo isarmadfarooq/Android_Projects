@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator = "@android:anim/bounce_interpolator">
+
+    <translate
+        android:fromXDelta="0"
+        android:toXDelta="400"
+        android:duration="2000"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"/>
+
+</set>
+
+
+<!-- EXPLAINATION HOW IT WORKS-->
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--    &lt;!&ndash; This is an XML file defining an animation set for Android. &ndash;&gt;-->
+<!--<set xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:interpolator="@android:anim/bounce_interpolator"> &lt;!&ndash; This sets the animation to use a bouncing effect. &ndash;&gt;-->
+
+<!--&lt;!&ndash; This element defines a translate animation, which moves a view horizontally. &ndash;&gt;-->
+<!--<translate-->
+<!--    android:fromXDelta="0"              &lt;!&ndash; The starting X position for the animation (0 = original position). &ndash;&gt;-->
+<!--android:toXDelta="400"              &lt;!&ndash; The ending X position for the animation (400 = 400 pixels to the right). &ndash;&gt;-->
+<!--android:repeatCount="infinite"      &lt;!&ndash; The animation will repeat forever. &ndash;&gt;-->
+<!--android:repeatMode="reverse"        &lt;!&ndash; The animation will play forwards and then backwards, creating a back-and-forth motion. &ndash;&gt;-->
+<!--/>-->
+
+<!--</set>-->
