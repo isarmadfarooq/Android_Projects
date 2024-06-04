@@ -1,0 +1,6 @@
+com.sarmadtechempire.recyclerviewapp.test.app-annotation-experimental-1.4.0-0 /home/sarmad-farooq/.gradle/caches/transforms-4/03082796a5207829baba48bef4c88e56/transformed/annotation-experimental-1.4.0/res
+com.sarmadtechempire.recyclerviewapp.test.app-core-1.5.0-1 /home/sarmad-farooq/.gradle/caches/transforms-4/90d7bfc548333cd6b28d7ace16670a9a/transformed/core-1.5.0/res
+com.sarmadtechempire.recyclerviewapp.test.app-androidTest-2 /home/sarmad-farooq/Android_Projects/AndroidStudioProjects/RecyclerViewApp/app/build/generated/res/resValues/androidTest/debug
+com.sarmadtechempire.recyclerviewapp.test.app-mergeDebugAndroidTestResources-3 /home/sarmad-farooq/Android_Projects/AndroidStudioProjects/RecyclerViewApp/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.sarmadtechempire.recyclerviewapp.test.app-mergeDebugAndroidTestResources-4 /home/sarmad-farooq/Android_Projects/AndroidStudioProjects/RecyclerViewApp/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.sarmadtechempire.recyclerviewapp.test.app-debugAndroidTest-5 /home/sarmad-farooq/Android_Projects/AndroidStudioProjects/RecyclerViewApp/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
