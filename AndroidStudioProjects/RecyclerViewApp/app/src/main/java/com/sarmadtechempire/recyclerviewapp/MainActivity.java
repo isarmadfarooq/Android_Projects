@@ -1,20 +1,29 @@
 package com.sarmadtechempire.recyclerviewapp;
 
+import android.app.Dialog;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView horizontalRecyclerView, verticalRecyclerView;
+    FloatingActionButton btnOpenDialog;
 
+    VerticalRecyclerAdapter verticalAdapter;
     ArrayList<HorizontalRecyclerModel> horizontalArr = new ArrayList<>();
     ArrayList<VerticalRecyclerModel> verticalArr = new ArrayList<>();
 
@@ -26,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         horizontalRecyclerView = findViewById(R.id.horizontalRecyclerView);
         verticalRecyclerView = findViewById(R.id.verticalRecyclerView);
+        btnOpenDialog = findViewById(R.id.btnOpenDialog);
 
         HorizontalRecyclerArr();
         VerticalRecyclerArr();
@@ -33,8 +43,53 @@ public class MainActivity extends AppCompatActivity {
         HorizontalRecyclerAdapter horizontalAdapter = new HorizontalRecyclerAdapter(this, horizontalArr);
         horizontalRecyclerView.setAdapter(horizontalAdapter);
 
-        VerticalRecyclerAdapter verticalAdapter = new VerticalRecyclerAdapter(this, verticalArr);
+       verticalAdapter = new VerticalRecyclerAdapter(this, verticalArr);
         verticalRecyclerView.setAdapter(verticalAdapter);
+
+        btnOpenDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Dialog dialog = new Dialog(MainActivity.this);
+                dialog.setContentView(R.layout.add_update_lay);
+
+                EditText edtName = dialog.findViewById(R.id.edtName);
+                EditText edtNumber = dialog.findViewById(R.id.edtNumber);
+                AppCompatButton btnAction = dialog.findViewById(R.id.btnAction);
+
+                btnAction.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String name = "", number = "";
+                        if(!edtName.getText().toString().isEmpty()) {
+                             name = edtName.getText().toString();
+                        }
+                        else
+                        {
+                            Toast.makeText(MainActivity.this,"Please Enter Contact Name!",Toast.LENGTH_SHORT).show();
+                        }
+
+                        if(!edtNumber.getText().toString().isEmpty())
+                        {
+                             number = edtNumber.getText().toString();
+                        }
+                        else
+                        {
+                            Toast.makeText(MainActivity.this,"Please Enter Contact Number!",Toast.LENGTH_SHORT).show();
+                        }
+
+                        verticalArr.add(new VerticalRecyclerModel(name, number));
+
+                        verticalAdapter.notifyItemInserted(verticalArr.size()-1);
+
+                        verticalRecyclerView.scrollToPosition(verticalArr.size()-1);
+
+                        dialog.dismiss();
+                    }
+                });
+                dialog.show();
+            }
+        });
 
 
 
