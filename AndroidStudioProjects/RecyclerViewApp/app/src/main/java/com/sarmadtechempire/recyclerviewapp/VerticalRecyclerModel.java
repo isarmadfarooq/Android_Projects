@@ -11,4 +11,11 @@ public class VerticalRecyclerModel {
         this.name = name;
         this.number = number;
     }
+
+    public VerticalRecyclerModel(String name, String number)
+    {
+        this.name = name;
+        this.number = number;
+
+    }
 }
