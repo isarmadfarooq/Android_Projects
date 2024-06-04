@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RecyclerViewApp</string>
+    <string name="name">Name</string>
+    <string name="verticallistimage">verticalListImage</string>
+    <string name="verticalLIstNameText">Name</string>
+    <string name="verticalListNumberText">Number</string>
+</resources>
