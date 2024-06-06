@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this,"Please Enter Contact Number!",Toast.LENGTH_SHORT).show();
                         }
 
-                        verticalArr.add(new VerticalRecyclerModel(name, number));
+                        verticalArr.add(new VerticalRecyclerModel(R.drawable.pic2, name, number));
 
                         verticalAdapter.notifyItemInserted(verticalArr.size()-1);
 
