@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ContactBook</string>
+    <string name="sarmadcontactbook">SarmadContactBook</string>
+    <string name="splashimage">splashImage</string>
+</resources>

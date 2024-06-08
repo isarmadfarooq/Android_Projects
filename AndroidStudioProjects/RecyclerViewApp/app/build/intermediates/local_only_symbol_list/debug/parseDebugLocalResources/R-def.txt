@@ -1,0 +1,37 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable pic1
+drawable pic2
+drawable pic3
+drawable pic4
+drawable pic5
+drawable pic6
+drawable pic7
+drawable pic8
+drawable pic9
+id horizontalRecyclerView
+id horizontalViewImage
+id horizontalViewTxtName
+id main
+id verticalListImage
+id verticalListNameText
+id verticalListNumberText
+id verticalRecyclerView
+layout activity_main
+layout item_horizontal_list_view
+layout item_vertical_list_view
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string name
+string verticalLIstNameText
+string verticalListNumberText
+string verticallistimage
+style Base.Theme.RecyclerViewApp
+style Theme.RecyclerViewApp
+xml backup_rules
+xml data_extraction_rules
