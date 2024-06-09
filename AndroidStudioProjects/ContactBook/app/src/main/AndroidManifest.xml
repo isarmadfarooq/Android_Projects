@@ -13,11 +13,11 @@
         android:theme="@style/Base.Theme.ContactBook"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:theme="@style/Base.Theme.ContactBook"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:theme="@style/Base.Theme.ContactBook"
             android:windowSoftInputMode="adjustResize"
             android:exported="true">

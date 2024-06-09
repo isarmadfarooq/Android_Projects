@@ -4,7 +4,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:id="@+id/splashLayout"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".SplashActivity">
+tools:context=".activity.SplashActivity">
 
 <View
     android:id="@+id/red_Circle"
@@ -31,6 +31,7 @@ tools:context=".SplashActivity">
         android:contentDescription="@string/splashimage"
         android:src="@drawable/contact_book"
         android:layout_centerInParent="true"
+        android:elevation="10dp"
         android:visibility="gone"/>
 
 </androidx.cardview.widget.CardView>
@@ -44,6 +45,7 @@ tools:context=".SplashActivity">
     android:layout_centerHorizontal="true"
     android:textSize="30sp"
     android:textStyle="bold"
+    android:elevation="10dp"
     android:layout_marginTop="2dp"
     android:fontFamily="@font/greatvibes_regular"
     android:textColor="#4CAF50"
