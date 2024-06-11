@@ -12,4 +12,10 @@ public class HomeContactRecyclerModel {
         this.name = name;
         this.number = number;
     }
+
+    public HomeContactRecyclerModel(String name, String number)
+    {
+        this.name = name;
+        this.number = number;
+    }
 }
