@@ -13,6 +13,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -21,7 +22,6 @@ import com.sarmadtechempire.contactbook.activity.adapter.HomeContactAdapter;
 import com.sarmadtechempire.contactbook.activity.model.HomeContactRecyclerModel;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,10 +39,24 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        Log.d(TAG, "onCreate: Initializing Views");
+
         verticalRecyclerView = findViewById(R.id.verticalRecyclerView);
         btnOpenDialog = findViewById(R.id.btnOpenDialog);
 
+        if (verticalRecyclerView == null) {
+            Log.e(TAG, "onCreate: verticalRecyclerView is null");
+        } else {
+            Log.d(TAG, "onCreate: verticalRecyclerView initialized");
+        }
 
+        if (btnOpenDialog == null) {
+            Log.e(TAG, "onCreate: btnOpenDialog is null");
+        } else {
+            Log.d(TAG, "onCreate: btnOpenDialog initialized");
+        }
+
+        verticalRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         btnOpenDialog.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,10 +75,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         Log.d(TAG, "Dialog Button Action Clicked");
 
-                        String name = "", number = "";
-
-                        name = dialogEditTxtName.getText().toString().trim();
-                        number = dialogEditTxtNumber.getText().toString().trim();
+                        String name = dialogEditTxtName.getText().toString().trim();
+                        String number = dialogEditTxtNumber.getText().toString().trim();
 
                         if (name.isEmpty()) {
                             Toast.makeText(MainActivity.this, "Please Enter Correct Name!", Toast.LENGTH_SHORT).show();
@@ -81,13 +93,14 @@ public class MainActivity extends AppCompatActivity {
                         homeContactAdapter.notifyItemInserted(contactArr.size() - 1);
                         verticalRecyclerView.scrollToPosition(contactArr.size() - 1);
                         dialog.dismiss();
+
                     }
                 });
 
                 dialog.show();
-
             }
         });
+
 
         ContactRecyclerArray();
 
@@ -113,4 +126,3 @@ public class MainActivity extends AppCompatActivity {
         contactArr.add(new HomeContactRecyclerModel(R.drawable.pic9, "Molana Ilyas Ghuman", "0330-7686901"));
     }
 }
-
