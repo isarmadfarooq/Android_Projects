@@ -88,6 +88,15 @@ public class MainActivity extends AppCompatActivity {
                             return;
                         }
 
+                        for(HomeContactRecyclerModel contct : contactArr)
+                        {
+                            if(contct.name.equals(name) && contct.number.equals(number))
+                            {
+                                Toast.makeText(MainActivity.this, "Contact Already Exists!", Toast.LENGTH_SHORT).show();
+                                return;
+                            }
+                        }
+
                         // Adding the new contact
                         contactArr.add(new HomeContactRecyclerModel(R.drawable.pic10, name, number));
                         homeContactAdapter.notifyItemInserted(contactArr.size() - 1);
