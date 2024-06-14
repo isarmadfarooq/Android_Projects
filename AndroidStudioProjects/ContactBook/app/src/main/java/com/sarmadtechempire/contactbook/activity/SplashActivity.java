@@ -1,4 +1,4 @@
-package com.sarmadtechempire.contactbook;
+package com.sarmadtechempire.contactbook.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,8 @@ import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.sarmadtechempire.contactbook.R;
 
 public class SplashActivity extends AppCompatActivity {
     View red_Circle;

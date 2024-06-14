@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_green_light"
+    android:paddingLeft="21dp"
+    android:paddingRight="21dp"
+    android:paddingBottom="11dp"
+    android:elevation="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialogTxtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:textColor="#EDE9E9"
+        android:layout_margin="18dp"
+        android:text="@string/add_contact"/>
+
+    <EditText
+        android:id="@+id/dialogEdtTxtName"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:autofillHints="1"
+        android:background="#fff"
+        android:hint="@string/enter_name"
+        android:inputType="text"
+        android:elevation="10dp"
+        android:minHeight="48dp"
+        android:padding="11dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dialogEdtTxtNumber"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:autofillHints="1"
+        android:background="#fff"
+        android:hint="@string/enter_number"
+        android:inputType="number"
+        android:elevation="10dp"
+        android:minHeight="48dp"
+        android:padding="11dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialogBtnAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:elevation="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="#fff"
+        android:layout_gravity="end"/>
+</LinearLayout>

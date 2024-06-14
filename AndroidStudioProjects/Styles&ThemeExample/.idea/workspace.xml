@@ -7,17 +7,7 @@
     <layouts>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
         <config>
-          <theme>@style/Theme.RecyclerViewApp</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_horizontal_list_view.xml">
-        <config>
-          <theme>@style/Theme.RecyclerViewApp</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_vertical_list_view.xml">
-        <config>
-          <theme>@style/Theme.RecyclerViewApp</theme>
+          <theme>@style/Theme.StylesThemeExample</theme>
         </config>
       </layout>
     </layouts>
@@ -26,15 +16,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0e8d2e-f2db-4019-a9ed-b9be934ac751" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/res/drawable/pic10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/res/layout/dialog_add_edit_contact.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ContactBook/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ContactBook/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ContactBook/app/src/main/java/com/sarmadtechempire/contactbook/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/java/com/sarmadtechempire/contactbook/activity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ContactBook/app/src/main/java/com/sarmadtechempire/contactbook/activity/model/HomeContactRecyclerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/java/com/sarmadtechempire/contactbook/activity/model/HomeContactRecyclerModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ContactBook/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ContactBook/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="45150c1d-0ea4-4e58-89ce-eeb941b67980" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ContactBook/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/java/com/sarmadtechempire/contactbook/SplashActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/res/anim/bounce.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/res/anim/spread.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/res/drawable/contact_book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/res/drawable/red_circle_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ContactBook/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,47 +45,32 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="layoutResourceFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2hNaShFJ5LHfX19BLa0H3BdDqHq" />
+  <component name="ProjectId" id="2hJwkggjKVPYtX2Osy6Frrzg57C" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Android App.app.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "ContactBookApp",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/sarmad-farooq/Android_Projects/AndroidStudioProjects/RecyclerViewApp"
+    "git-widget-placeholder": "RecyclerViewApp",
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="RecyclerViewApp.app.main" />
+      <module name="Styles&amp;ThemeExample.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -152,17 +132,19 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3e0e8d2e-f2db-4019-a9ed-b9be934ac751" name="Changes" comment="" />
-      <created>1717436990160</created>
+      <changelist id="45150c1d-0ea4-4e58-89ce-eeb941b67980" name="Changes" comment="" />
+      <created>1717325633115</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1717436990160</updated>
+      <updated>1717325633115</updated>
     </task>
     <servers />
   </component>
