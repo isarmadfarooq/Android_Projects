@@ -7,6 +7,8 @@ import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -27,6 +29,8 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
 
     Context context;
     ArrayList<HomeContactRecyclerModel> contactArr;
+
+    private int lastPosition = - 1;
      public HomeContactAdapter(Context context, ArrayList<HomeContactRecyclerModel> contactArr)
     {
         this.context = context;
@@ -47,6 +51,8 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
         holder.verticalListImage.setImageResource(contactArr.get(position).img);
         holder.verticalListNameText.setText(contactArr.get(position).name);
         holder.verticalListNumberText.setText(contactArr.get(position).number);
+
+        setAnimation(holder.itemView, position);
         holder.verticalListLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,9 +90,9 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
                             return;
                         }
 
-                        for(HomeContactRecyclerModel contct : contactArr)
+                        for(HomeContactRecyclerModel contact : contactArr)
                         {
-                            if(contct.name.equals(name) && contct.number.equals(number))
+                            if(contact.name.equals(name) && contact.number.equals(number))
                             {
                                 Toast.makeText(context,"Contact already exists",Toast.LENGTH_SHORT).show();
                                 return;
@@ -154,5 +160,15 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
             verticalListNumberText = itemView.findViewById(R.id.verticalListNumberText);
             verticalListLayout = itemView.findViewById(R.id.verticalListLayout);
         }
+    }
+
+    private void setAnimation(View viewToAnimate, int position)
+    {
+        if(position>lastPosition) {
+            Animation slideIn = AnimationUtils.loadAnimation(context, android.R.anim.slide_in_left);
+            viewToAnimate.startAnimation(slideIn);
+            lastPosition = position;
+        }
+
     }
 }

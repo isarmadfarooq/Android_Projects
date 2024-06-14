@@ -133,5 +133,6 @@ public class MainActivity extends AppCompatActivity {
         contactArr.add(new HomeContactRecyclerModel(R.drawable.pic7, "Mufti Tariq Masood", "0334-7298354"));
         contactArr.add(new HomeContactRecyclerModel(R.drawable.pic8, "Molana Tariq Jameel", "0335-6298765"));
         contactArr.add(new HomeContactRecyclerModel(R.drawable.pic9, "Molana Ilyas Ghuman", "0330-7686901"));
+        contactArr.add(new HomeContactRecyclerModel(R.drawable.pic10, "Mufti Menk","0334-9087654"));
     }
 }
