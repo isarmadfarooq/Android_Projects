@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CustomToastExample</string>
+    <string name="toast_immage">Toast Immage</string>
+    <string name="test_message">Test Message</string>
+    <string name="message_sent_successfully">Message sent Successfully!</string>
+    <string name="show_custom_toast">Show Custom Toast</string>
+</resources>
