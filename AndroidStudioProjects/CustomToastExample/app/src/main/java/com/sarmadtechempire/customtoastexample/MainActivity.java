@@ -1,6 +1,7 @@
 package com.sarmadtechempire.customtoastexample;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +41,12 @@ public class MainActivity extends AppCompatActivity {
                 View view = getLayoutInflater().inflate(R.layout.custom_toast_layout, null);
                 toast.setView(view);
 
+
+
                 TextView textView = view.findViewById(R.id.txtMsg);
+
+                Log.d("TAG", "onClick: "+textView.getText());
+
 
                 textView.setText(R.string.message_sent_successfully);
 
