@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ContactBook</string>
+    <string name="sarmadcontactbook">SarmadContactBook</string>
+    <string name="splashimage">splashImage</string>
+    <string name="name">Name</string>
+    <string name="contact">contact</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="btnopendialog">btnOpenDialog</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="add">Add</string>
+    <string name="update_contact">Update Contact</string>
+    <string name="update">Update</string>
+</resources>
