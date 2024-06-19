@@ -99,8 +99,29 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
                             }
                         }
 
-                        contactArr.set(currentPosition, new HomeContactRecyclerModel(contactArr.get(currentPosition).img,name,number));
-                        notifyItemChanged(currentPosition);
+                        AlertDialog.Builder updateDialog = new AlertDialog.Builder(context);
+                        updateDialog.setTitle("Update Contact?");
+                        updateDialog.setIcon(R.drawable.baseline_update_24);
+                        updateDialog.setMessage("Are you sure you want to update this contact?");
+
+                        updateDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                contactArr.set(currentPosition, new HomeContactRecyclerModel(contactArr.get(currentPosition).img,name,number));
+                                notifyItemChanged(currentPosition);
+                                Toast.makeText(context,"Contact Updated",Toast.LENGTH_SHORT).show();
+
+                            }
+                        });
+
+                        updateDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(context,"Contact Not Updated",Toast.LENGTH_SHORT).show();
+                            }
+                        });
+
+                        updateDialog.show();
                         dialog.dismiss();
                     }
                 });

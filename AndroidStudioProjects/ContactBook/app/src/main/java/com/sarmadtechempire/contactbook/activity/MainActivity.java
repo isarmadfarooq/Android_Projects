@@ -1,6 +1,7 @@
 package com.sarmadtechempire.contactbook.activity;
 
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.graphics.Insets;
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         verticalRecyclerView = findViewById(R.id.verticalRecyclerView);
         btnOpenDialog = findViewById(R.id.btnOpenDialog);
+
 
         if (verticalRecyclerView == null) {
             Log.e(TAG, "onCreate: verticalRecyclerView is null");
@@ -97,11 +100,31 @@ public class MainActivity extends AppCompatActivity {
                             }
                         }
 
-                        // Adding the new contact
-                        contactArr.add(new HomeContactRecyclerModel(R.drawable.pic10, name, number));
-                        homeContactAdapter.notifyItemInserted(contactArr.size() - 1);
-                        verticalRecyclerView.scrollToPosition(contactArr.size() - 1);
+                        AlertDialog.Builder addDialog = new AlertDialog.Builder(MainActivity.this);
+                        addDialog.setTitle("Add Contact");
+                        addDialog.setIcon(R.drawable.baseline_add_24);
+                        addDialog.setMessage("Are you sure you want to add this contact");
+
+                        addDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                contactArr.add(new HomeContactRecyclerModel(R.drawable.pic10, name, number));
+                                homeContactAdapter.notifyItemInserted(contactArr.size() - 1);
+                                verticalRecyclerView.scrollToPosition(contactArr.size() - 1);
+                                Toast.makeText(MainActivity.this, "Contact Added", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+
+                        addDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(MainActivity.this,"No contact added",Toast.LENGTH_SHORT).show();
+                            }
+                        });
+
+                        addDialog.show();
                         dialog.dismiss();
+
 
                     }
                 });
@@ -135,4 +158,5 @@ public class MainActivity extends AppCompatActivity {
         contactArr.add(new HomeContactRecyclerModel(R.drawable.pic9, "Molana Ilyas Ghuman", "0330-7686901"));
         contactArr.add(new HomeContactRecyclerModel(R.drawable.pic10, "Mufti Menk","0334-9087654"));
     }
+
 }
