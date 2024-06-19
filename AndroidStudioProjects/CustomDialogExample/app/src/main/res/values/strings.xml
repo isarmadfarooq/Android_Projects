@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CustomDialogExample</string>
+    <string name="custom_dialog_image">custom_dialog_image</string>
+    <string name="success">Success</string>
+    <string name="your_order_has_been_successfully_placed">Your order has been successfully placed!</string>
+    <string name="okay">Okay</string>
+</resources>
