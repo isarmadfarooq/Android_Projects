@@ -112,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
                                 homeContactAdapter.notifyItemInserted(contactArr.size() - 1);
                                 verticalRecyclerView.scrollToPosition(contactArr.size() - 1);
                                 Toast.makeText(MainActivity.this, "Contact Added", Toast.LENGTH_SHORT).show();
+
+                                //Show Notification
+                                int imageResId = R.drawable.pic10;
+                                NotificationUtils.showNotification(MainActivity.this, "New Contact Added", "Name: " + name + ", Number: " + number, imageResId);
                             }
                         });
 

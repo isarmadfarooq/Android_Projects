@@ -21,6 +21,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.sarmadtechempire.contactbook.R;
+import com.sarmadtechempire.contactbook.activity.NotificationUtils;
 import com.sarmadtechempire.contactbook.activity.model.HomeContactRecyclerModel;
 
 import java.util.ArrayList;
@@ -110,6 +111,7 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
                                 contactArr.set(currentPosition, new HomeContactRecyclerModel(contactArr.get(currentPosition).img,name,number));
                                 notifyItemChanged(currentPosition);
                                 Toast.makeText(context,"Contact Updated",Toast.LENGTH_SHORT).show();
+                                NotificationUtils.showNotification(context, "Contact Updated", "Name: " + name + ", Number: " + number, contactArr.get(currentPosition).img);
 
                             }
                         });
