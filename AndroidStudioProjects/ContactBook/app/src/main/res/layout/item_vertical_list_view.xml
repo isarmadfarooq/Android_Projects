@@ -3,49 +3,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="24dp">
+
 
     <RelativeLayout
         android:id="@+id/verticalListLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="11dp"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
         tools:ignore="UselessLeaf,UselessParent">
 
         <ImageView
             android:id="@+id/verticalListImage"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:elevation="10dp"
             android:scaleType="centerCrop"
             android:src="@drawable/pic1"
-            tools:ignore="ContentDescription"/>
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/verticalListNameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/name"
+            android:elevation="10dp"
             android:layout_toEndOf="@id/verticalListImage"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:textSize="22sp"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textStyle="bold"/>
+            android:text="@string/name_txt"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/verticalListNumberText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:elevation="10dp"
             android:layout_below="@id/verticalListNameText"
-            android:text="@string/contact"
             android:layout_toEndOf="@id/verticalListImage"
             android:layout_marginStart="10dp"
-            android:textSize="16sp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="5dp"
+            android:text="@string/contat_txt"
+            android:textSize="16sp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verticalListNumberText"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Dial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:background="@drawable/item_vertical_list_custom_btn_bg"
+                android:layout_marginEnd="5dp"
+                android:text="@string/dial_btn"
+                android:textColor="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/item_vertical_list_custom_btn_bg"
+                android:text="@string/msg_btn"
+                android:textColor="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/item_vertical_list_custom_btn_bg"
+                android:text="@string/email_btn"
+                android:textColor="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:background="@drawable/item_vertical_list_custom_btn_bg"
+                android:text="@string/share_btn"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
 
     </RelativeLayout>
-
+</androidx.cardview.widget.CardView>
 
 </LinearLayout>
