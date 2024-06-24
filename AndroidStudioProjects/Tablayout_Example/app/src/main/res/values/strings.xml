@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tablayout_Example</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chat_txt">Chat</string>
+    <string name="status_txt">Status</string>
+    <string name="calls_txt">Calls</string>
+</resources>
