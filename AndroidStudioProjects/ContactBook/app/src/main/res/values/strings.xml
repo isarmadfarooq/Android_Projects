@@ -12,4 +12,10 @@
     <string name="add">Add</string>
     <string name="update_contact">Update Contact</string>
     <string name="update">Update</string>
+    <string name="name_txt">Name</string>
+    <string name="contat_txt">Contact</string>
+    <string name="dial_btn">Dial</string>
+    <string name="msg_btn">Message</string>
+    <string name="email_btn">Email</string>
+    <string name="share_btn">Share</string>
 </resources>
