@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btn_Dial
+id btn_Email
+id btn_Msg
+id btn_Share
+id main
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string btn_Email
+string btn_Share
+string btn_msg
+string dial_btn
+style Base.Theme.ImplicitIntentExample
+style Theme.ImplicitIntentExample
+xml backup_rules
+xml data_extraction_rules
