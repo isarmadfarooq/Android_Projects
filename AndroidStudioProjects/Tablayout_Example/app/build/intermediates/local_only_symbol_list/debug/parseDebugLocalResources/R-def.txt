@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id main
+id tabLayout
+id viewPager
+layout activity_main
+layout fragment_calls
+layout fragment_chat
+layout fragment_status
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string calls_txt
+string chat_txt
+string hello_blank_fragment
+string status_txt
+style Base.Theme.Tablayout_Example
+style Theme.Tablayout_Example
+xml backup_rules
+xml data_extraction_rules

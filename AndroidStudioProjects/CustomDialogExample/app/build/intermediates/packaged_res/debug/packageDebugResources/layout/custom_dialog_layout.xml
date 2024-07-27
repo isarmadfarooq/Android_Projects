@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2196F3"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:contentDescription="@string/custom_dialog_image"
+        android:src="@drawable/baseline_cloud_done_24"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical"
+        android:background="#fff">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/success"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:gravity="center"
+            android:layout_margin="11dp"
+            android:textColor="#2196F3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/your_order_has_been_successfully_placed"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_margin="11dp"
+            android:textColor="#000"/>
+
+
+    </LinearLayout>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOkay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/okay"
+        android:textSize="21sp"
+        android:background="#2196F3"
+        android:textColor="#fff"/>
+
+
+
+
+</LinearLayout>

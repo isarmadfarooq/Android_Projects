@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Tablayout_Example</string>
+    <string name="calls_txt">Calls</string>
+    <string name="chat_txt">Chat</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="status_txt">Status</string>
+    <style name="Base.Theme.Tablayout_Example" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Tablayout_Example" parent="Base.Theme.Tablayout_Example"/>
+</resources>

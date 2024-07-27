@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable baseline_cloud_done_24
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnOkay
+id main
+layout activity_main
+layout custom_dialog_layout
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string custom_dialog_image
+string okay
+string success
+string your_order_has_been_successfully_placed
+style Base.Theme.CustomDialogExample
+style Theme.CustomDialogExample
+xml backup_rules
+xml data_extraction_rules

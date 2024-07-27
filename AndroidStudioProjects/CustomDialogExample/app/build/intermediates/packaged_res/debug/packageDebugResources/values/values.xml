@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">CustomDialogExample</string>
+    <string name="custom_dialog_image">custom_dialog_image</string>
+    <string name="okay">Okay</string>
+    <string name="success">Success</string>
+    <string name="your_order_has_been_successfully_placed">Your order has been successfully placed!</string>
+    <style name="Base.Theme.CustomDialogExample" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.CustomDialogExample" parent="Base.Theme.CustomDialogExample"/>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">ImplicitIntentExample</string>
+    <string name="btn_Email">Email</string>
+    <string name="btn_Share">Share</string>
+    <string name="btn_msg">Message</string>
+    <string name="dial_btn">Dial</string>
+    <style name="Base.Theme.ImplicitIntentExample" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.ImplicitIntentExample" parent="Base.Theme.ImplicitIntentExample"/>
+</resources>

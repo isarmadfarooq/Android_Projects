@@ -1,0 +1,6 @@
+com.sarmadtechempire.notificationsample.test.app-annotation-experimental-1.4.0-0 /home/sarmad-farooq/.gradle/caches/transforms-4/6138daac0ed3a6270e92942826f32ea5/transformed/annotation-experimental-1.4.0/res
+com.sarmadtechempire.notificationsample.test.app-core-1.5.0-1 /home/sarmad-farooq/.gradle/caches/transforms-4/8f97cd00dab6f9cea83391c6643bce48/transformed/core-1.5.0/res
+com.sarmadtechempire.notificationsample.test.app-androidTest-2 /home/sarmad-farooq/Android_Projects/AndroidStudioProjects/NotificationSample/app/build/generated/res/resValues/androidTest/debug
+com.sarmadtechempire.notificationsample.test.app-mergeDebugAndroidTestResources-3 /home/sarmad-farooq/Android_Projects/AndroidStudioProjects/NotificationSample/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.sarmadtechempire.notificationsample.test.app-mergeDebugAndroidTestResources-4 /home/sarmad-farooq/Android_Projects/AndroidStudioProjects/NotificationSample/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.sarmadtechempire.notificationsample.test.app-debugAndroidTest-5 /home/sarmad-farooq/Android_Projects/AndroidStudioProjects/NotificationSample/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
