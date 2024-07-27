@@ -23,17 +23,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/homeTitle"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/verticalRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="10dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_vertical_list_view"
-        android:layout_marginTop="24dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/verticalRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:elevation="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_vertical_list_view" />
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -4,6 +4,8 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +23,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.sarmadtechempire.contactbook.R;
+import com.sarmadtechempire.contactbook.activity.NotificationUtils;
 import com.sarmadtechempire.contactbook.activity.model.HomeContactRecyclerModel;
 
 import java.util.ArrayList;
@@ -29,8 +32,9 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
 
     Context context;
     ArrayList<HomeContactRecyclerModel> contactArr;
-
     private int lastPosition = - 1;
+
+
      public HomeContactAdapter(Context context, ArrayList<HomeContactRecyclerModel> contactArr)
     {
         this.context = context;
@@ -53,6 +57,68 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
         holder.verticalListNumberText.setText(contactArr.get(position).number);
 
         setAnimation(holder.itemView, position);
+
+        holder.btn_Dial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int currentPosition = holder.getAdapterPosition();
+                if (currentPosition == RecyclerView.NO_POSITION) {
+                    return;
+                }
+                Intent iDial = new Intent(Intent.ACTION_DIAL);
+                iDial.setData(Uri.parse("tel:" + contactArr.get(currentPosition).number));
+                context.startActivity(iDial);
+
+            }
+        });
+
+        holder.btn_Msg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int currentPosition = holder.getAdapterPosition();
+                if (currentPosition == RecyclerView.NO_POSITION) {
+                    return;
+                }
+                Intent iMsg = new Intent(Intent.ACTION_SENDTO);
+                iMsg.setData(Uri.parse("smsto:" +Uri.encode(contactArr.get(currentPosition).number)));
+                iMsg.putExtra("sms_body", "Please solve this issue asap.");
+                context.startActivity(iMsg);
+            }
+        });
+
+        holder.btn_Email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int currentPosition = holder.getAdapterPosition();
+                if(currentPosition == RecyclerView.NO_POSITION)
+                {
+                    return;
+                }
+                Intent iEmail = new Intent(Intent.ACTION_SEND);
+                iEmail.setType("message/rfc822");
+                iEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{"i.sarmadfarooq@gmail.com", "areebfarooq98@gmail.com"});
+                iEmail.putExtra(Intent.EXTRA_SUBJECT, "Contact Issue");
+                iEmail.putExtra(Intent.EXTRA_TEXT, "Please solve this issue asap.");
+                context.startActivity(Intent.createChooser(iEmail, "Email via"));
+            }
+        });
+
+        holder.btn_Share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int currentPosition = holder.getAdapterPosition();
+                if(currentPosition == RecyclerView.NO_POSITION)
+                {
+                    return;
+                }
+                Intent iShare = new Intent(Intent.ACTION_SEND);
+                iShare.setType("text/plain");
+                iShare.putExtra(Intent.EXTRA_TEXT,"https://github.com/isarmadfarooq/Android_Projects/tree/main/AndroidStudioProjects/CustomDialogExample/app/src");
+                context.startActivity(Intent.createChooser(iShare, "Share via"));
+
+            }
+        });
+
         holder.verticalListLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,6 +176,7 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
                                 contactArr.set(currentPosition, new HomeContactRecyclerModel(contactArr.get(currentPosition).img,name,number));
                                 notifyItemChanged(currentPosition);
                                 Toast.makeText(context,"Contact Updated",Toast.LENGTH_SHORT).show();
+                                NotificationUtils.showNotification(context, "Contact Updated", "Name: " + name + ", Number: " + number, contactArr.get(currentPosition).img);
 
                             }
                         });
@@ -131,9 +198,11 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
         });
 
         holder.verticalListLayout.setOnLongClickListener(new View.OnLongClickListener() {
-             int currentPosition = holder.getAdapterPosition();
+
+
             @Override
             public boolean onLongClick(View v) {
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(context)
                         .setTitle("Delete Contact")
                         .setMessage("Are you sure you want to delete ?")
@@ -141,7 +210,10 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-
+                                int currentPosition = holder.getAdapterPosition();
+                                if (currentPosition == RecyclerView.NO_POSITION) {
+                                    return;
+                                }
                                 contactArr.remove(currentPosition);
                                 notifyItemRemoved(currentPosition);
 
@@ -171,7 +243,7 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
         ImageView verticalListImage;
         TextView verticalListNameText;
         TextView verticalListNumberText;
-
+        AppCompatButton btn_Dial, btn_Msg, btn_Email, btn_Share;
         RelativeLayout verticalListLayout;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -179,6 +251,10 @@ public class HomeContactAdapter extends RecyclerView.Adapter<HomeContactAdapter.
             verticalListImage = itemView.findViewById(R.id.verticalListImage);
             verticalListNameText = itemView.findViewById(R.id.verticalListNameText);
             verticalListNumberText = itemView.findViewById(R.id.verticalListNumberText);
+            btn_Dial = itemView.findViewById(R.id.btn_Dial);
+            btn_Msg = itemView.findViewById(R.id.btn_Msg);
+            btn_Email = itemView.findViewById(R.id.btn_Email);
+            btn_Share = itemView.findViewById(R.id.btn_Share);
             verticalListLayout = itemView.findViewById(R.id.verticalListLayout);
         }
     }
